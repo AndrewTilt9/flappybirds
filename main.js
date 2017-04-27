@@ -5,7 +5,8 @@ var mainStage ={
         //That's where we load the images and sound
         
         //Load the bird sprite
-        game.load.image('bird','assests/bird.png');
+        game.load.image('bird','assets/bird.png');
+        game.load.iamge('pipe','assets/pipe.png');
     },
     
     create: function() {
