@@ -97,7 +97,7 @@ var mainState ={
 };
 
 //Initailise Phaser, and create a 400px x 490x game
-var game = new Phaser.game(400, 490);
+var game = new Phaser.Game(400, 490);
 
 //Add the 'mainstate' and call it 'main'
 game.state.add('main', mainState);
