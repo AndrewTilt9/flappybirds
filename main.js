@@ -1,5 +1,5 @@
 //Create our 'main' state that will contain the game
-var mainStage ={
+var mainState ={
     preload: function() {
     //This function will be exexcuted at the beginning
         //That's where we load the images and sound
