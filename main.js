@@ -40,9 +40,9 @@ var mainState = {
 		//Timer for pipes
 		this.timer = game.time.events.loop(1500, this.addRowOfPipes, this);
 		
-		//Scoring
-		this.score=0;
-		this.labelscore = game.add.text(20, 20, "0",
+		//Score
+		this.score= 0;
+		this.labelScore = game.add.text(20, 20, "0",
 						{font: "30px Arial", fill: "#ffffff" });			
 	},
 	
@@ -53,9 +53,9 @@ var mainState = {
 		//Call the 'restartGame' function
 		if (this.bird.y <0 || this.bird.y > 490)
 			this.restartGame();
+		
 		//calls the restartGame function each time the bird dies 
-		game.physics.arcade.overlap(
-			this.bird, this.pipes, this.restartGame, null, this);
+		game.physics.arcade.overlap(this.bird, this.pipes, this.restartGame,null, this);
 	},
 	
 	jump: function() {
