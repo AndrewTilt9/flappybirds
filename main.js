@@ -14,7 +14,7 @@ var mainState = {
 		//Here we setup the game, display sprites, etc.
 		
 		//Change the background colour of the game to blue - for now!
-		game.stage.backgroundColor = '#191970';
+		game.stage.backgroundColor = '#000000';
 		
 		//Set the physics for the game
 		game.physics.startSystem(Phaser.Physics.ARCADE);
