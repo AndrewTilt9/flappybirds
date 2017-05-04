@@ -6,7 +6,7 @@ var mainState = {
 		
 		//Load the bird sprite
 		game.load.image('bird', 'assets/Falcon.png');
-		game.load.image('pipe', 'assets/pipe.png');
+		game.load.image('pipe', 'assets/asteroid.png');
 	},
 	
 	create: function() {
