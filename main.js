@@ -94,7 +94,7 @@ var mainState = {
 	game.time.events.remove(this.timer);
 		
         //Go through all the pipes, and stop their movement
-	tjos.pipes.forEach(function(p){	
+	this.pipes.forEach(function(p){	
 		p.body.velocity.x = 0;
 	},this);
 	
