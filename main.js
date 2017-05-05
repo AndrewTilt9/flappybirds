@@ -85,7 +85,7 @@ var mainState = {
 	hitpipe: function() {
 	// If the bird has already hit a pipe, do nothing 
 	// It means the bird is already falling off the screen	
-          if (this.bird.alive ==false)
+          if (this.bird.alive == false)
 		  return;
 		
 	//Set the alive property of the bird to false 
