@@ -99,7 +99,7 @@ var mainState = {
 		p.body.velocity.x = 0;
 	},this);
 	
-	],	
+	},	
 		
 	
 	//Restart the game
