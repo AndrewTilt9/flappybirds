@@ -7,6 +7,7 @@ var mainState = {
 		//Load the bird sprite
 		game.load.image('bird', 'assets/Falcon.png');
 		game.load.image('pipe', 'assets/asteroid.png');
+		game.load.audio('jump', 'assests/jump.wav');
 	},
 	
 	create: function() {
@@ -43,7 +44,9 @@ var mainState = {
 		//Score
 		this.score= -1;
 		this.labelScore = game.add.text(20, 20, "0",
-						{font: "30px Arial", fill: "#ffffff" });			
+						{font: "30px Arial", fill: "#ffffff" });	
+		//Add the sound to the game 
+		this.jumpsound = game.add.audio('jump');
 	},
 	
 	update: function() {
@@ -78,6 +81,9 @@ var mainState = {
 		
 		//And start the animation
 		animation.start();
+		
+		//Play sound
+		this.jumpSound.play();
 		
 		
 	},
